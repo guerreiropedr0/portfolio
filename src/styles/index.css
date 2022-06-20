@@ -20,6 +20,10 @@
   color: inherit;
 }
 
+body {
+  background-color: var(--white);
+}
+
 .nav-bar {
   display: flex;
   flex-direction: column;
@@ -88,7 +92,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--white);
   gap: 1rem;
   font-family: var(--heading);
   color: var(--black);
