@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
   --black: #303030;
@@ -7,6 +8,7 @@
   --gray: #d3d3d3;
   --blue: #00b7ff;
   --heading: 'Montserrat', sans-serif;
+  --body: 'Roboto', sans-serif;
 }
 
 *,
@@ -123,6 +125,38 @@ body {
 
 .media-icon:hover {
   transform: scale(1.3);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.section-heading {
+  font-family: var(--heading);
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+}
+
+.about-text {
+  font-family: var(--body);
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pedro-img {
+  width: 50%;
+  border-radius: 50%;
+  border: 3px solid var(--blue);
 }
 
 @media only screen and (min-width: 900px) {

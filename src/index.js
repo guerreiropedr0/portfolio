@@ -1,11 +1,13 @@
 import './styles/index.css';
 import logo from './assets/logo.svg';
 import avatar from './assets/head.png';
+import pedro from './assets/pedro-image.png';
 
 const MENU = document.getElementById('menu');
 const OPEN_MENU = document.getElementById('open-menu');
 document.getElementById('logo').src = logo;
 document.getElementById('avatar').src = avatar;
+document.getElementById('pedro-image').src = pedro;
 
 OPEN_MENU.addEventListener(('click'), () => {
   if (MENU.style.height === '184px') {
