@@ -4,12 +4,14 @@ const MENU = document.getElementById('menu');
 const OPEN_MENU = document.getElementById('open-menu');
 const CLOSE_MENU = document.getElementById('close-menu');
 
-OPEN_MENU.addEventListener(('click'), () => {
-  MENU.classList.toggle('hidden');
-  OPEN_MENU.style.display = 'none';
-});
+const menuDisplay = (btn) => {
+  btn.addEventListener(('click'), () => {
+    MENU.classList.toggle('hidden');
+    OPEN_MENU.classList.toggle('hidden');
+  });
+};
 
-CLOSE_MENU.addEventListener(('click'), () => {
-  MENU.classList.toggle('hidden');
-  OPEN_MENU.style.display = 'block';
-});
+window.onload = () => {
+  menuDisplay(OPEN_MENU);
+  menuDisplay(CLOSE_MENU);
+};
