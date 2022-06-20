@@ -18,6 +18,7 @@
 
 .nav-bar {
   display: flex;
+  flex-direction: column;
   padding: 1rem;
   background-color: var(--black);
   color: var(--white);
@@ -38,14 +39,13 @@
   margin-left: auto;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .menu {
   flex: auto;
   display: flex;
   flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
 }
 
 .nav-links {
