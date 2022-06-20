@@ -82,6 +82,18 @@
   gap: 0.5rem;
 }
 
+.intro {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 3px solid var(--blue);
+}
+
 @media only screen and (min-width: 900px) {
   .bi-list {
     display: none;
