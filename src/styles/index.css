@@ -87,11 +87,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  gap: 1rem;
+  font-family: var(--heading);
+  color: var(--black);
+  height: calc(100vh - 96px);
 }
 
 .avatar {
   border-radius: 50%;
   border: 3px solid var(--blue);
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  gap: 2rem;
+}
+
+.media-icon {
+  width: 32px;
 }
 
 @media only screen and (min-width: 900px) {
