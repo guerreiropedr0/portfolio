@@ -81,3 +81,27 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+@media only screen and (min-width: 900px) {
+  .bi-list {
+    display: none;
+  }
+
+  .menu {
+    height: auto;
+  }
+
+  .nav-bar,
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .nav-bar {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    justify-content: flex-end;
+  }
+}
