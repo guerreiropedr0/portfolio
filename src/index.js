@@ -5,6 +5,7 @@ import pedro from './assets/pedro-image.png';
 import rspec from './assets/rspec.png';
 import jest from './assets/jest.png';
 import rails from './assets/rails.png';
+import postman from './assets/postman.png';
 
 const MENU = document.getElementById('menu');
 const OPEN_MENU = document.getElementById('open-menu');
@@ -14,6 +15,7 @@ document.getElementById('pedro-image').src = pedro;
 document.getElementById('rspec').src = rspec;
 document.getElementById('jest').src = jest;
 document.getElementById('rails').src = rails;
+document.getElementById('postman').src = postman;
 
 OPEN_MENU.addEventListener(('click'), () => {
   if (MENU.style.height === '184px') {
