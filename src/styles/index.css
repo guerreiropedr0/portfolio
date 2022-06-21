@@ -152,6 +152,14 @@ body {
 .about-text {
   font-family: var(--body);
   line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-text p {
+  text-indent: 2%;
 }
 
 .pedro-img {
@@ -181,5 +189,26 @@ body {
   .nav-links {
     justify-content: flex-end;
     gap: 2rem;
+  }
+
+  .about-info {
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+
+  .about-text {
+    width: 30%;
+    margin-left: auto;
+  }
+
+  .pedro-img {
+    width: 400px;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-text {
+    width: 100%;
   }
 }
