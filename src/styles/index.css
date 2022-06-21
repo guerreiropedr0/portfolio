@@ -142,10 +142,6 @@ body {
   border-bottom: 3px solid var(--black);
 }
 
-.about-text {
-  font-family: var(--body);
-}
-
 .about-info {
   display: flex;
   flex-direction: column;
@@ -153,9 +149,13 @@ body {
   gap: 1rem;
 }
 
+.about-text {
+  font-family: var(--body);
+  line-height: 1.5rem;
+}
+
 .pedro-img {
   width: 50%;
-  border-radius: 50%;
   border: 3px solid var(--blue);
 }
 
