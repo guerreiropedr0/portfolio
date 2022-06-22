@@ -33,7 +33,7 @@
           <a class="nav-link" href="">PROJECTS</a>
         </li>
         <li>
-          <a class="nav-link" href="">CONTACT</a>
+          <a class="nav-link" href="#contact">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -223,6 +223,64 @@
       </div>
     </div>
 
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 data-aos="fade-right" class="section-heading">Contact</h2>
+    <h3 class="contact-subheading" data-aos="fade-right">Have a question or want to work together?</h3>
+    <div data-aos="zoom-in" class="contacts-holder">
+      <form
+      class="form"
+      action="https://formspree.io/f/mqknoqqp"
+      method="POST">
+        <div class="form-item">
+          <label for="name">Name</label>
+          <input
+          class="form-field"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Bilbo Baggins"
+          required
+          >
+        </div>
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input
+          class="form-field"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@domain.com"
+          required
+          >
+        </div>
+        <div class="form-item">
+          <label for="message">Message</label>
+          <textarea
+          class="form-field"
+          name="message"
+          id="message"
+          placeholder="Your message"
+          required
+          ></textarea>
+        </div>
+        <button class="btn" type="submit">SUBMIT</button>
+      </form>
+
+      <div class="resume-holder">
+        <h3 class="contact-subheading">Explore my resume</h3>
+        <a
+        class="resume"
+        href="resume.pdf"
+        target="_blank"
+        rel="noopener"
+        >
+          <i class="bi bi-download"></i>
+          <p>RESUME</p>
+        </a>
+      </div>
+    </div>
   </section>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
