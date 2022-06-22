@@ -229,6 +229,11 @@ body {
   background-color: #fff;
 }
 
+.contact-subheading {
+  font-family: var(--heading);
+  text-align: center;
+}
+
 .form {
   align-self: flex-start;
   width: 100%;
@@ -274,6 +279,18 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem;
+}
+
+.resume {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: var(--heading);
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 2px solid var(--blue);
 }
 
 @media only screen and (min-width: 900px) {
