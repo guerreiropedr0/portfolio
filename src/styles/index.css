@@ -247,6 +247,7 @@ body {
   background-color: var(--white);
   border-radius: 1rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--gray);
 }
 
 .project-info {
@@ -270,7 +271,8 @@ body {
 }
 
 .project-img {
-  width: 100%;
+  width: 343px;
+  height: 229px;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
@@ -278,7 +280,7 @@ body {
 .project-item {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.5rem;
 }
 
 .project-icon {

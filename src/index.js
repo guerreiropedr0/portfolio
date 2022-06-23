@@ -6,9 +6,11 @@ import rspec from './assets/rspec.png';
 import jest from './assets/jest.png';
 import rails from './assets/rails.png';
 import postman from './assets/postman.png';
+import projects from './projects.js';
 
 const MENU = document.getElementById('menu');
 const OPEN_MENU = document.getElementById('open-menu');
+const PROJECTS = document.getElementById('projects-holder');
 document.getElementById('logo').src = logo;
 document.getElementById('avatar').src = avatar;
 document.getElementById('pedro-image').src = pedro;
@@ -28,3 +30,23 @@ OPEN_MENU.addEventListener(('click'), () => {
   OPEN_MENU.classList.toggle('bi-list');
   OPEN_MENU.classList.toggle('bi-x');
 });
+
+const displayProjects = (projects) => {
+  projects.forEach((project) => {
+    PROJECTS.innerHTML += `<div class="project">
+    <img class="project-img" src="${project.image}" alt="${project.title}">
+    <div class="project-info">
+    <h3 class="project-title">${project.title}</h3>
+    <ul class="project-languages">
+    ${project.languages
+    .map((lang) => `<li class="project-item">
+      <img class="project-icon" src="${lang.icon}" alt="">
+      <p>${lang.name}</p>
+      </li>`)
+    .join('')}
+    </ul>
+  </div>`;
+  });
+};
+
+displayProjects(projects);
