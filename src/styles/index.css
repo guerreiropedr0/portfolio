@@ -308,6 +308,19 @@ body {
   border: 2px solid var(--blue);
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: var(--black);
+  font-family: var(--body);
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
 @media only screen and (min-width: 900px) {
   .bi-list {
     display: none;
