@@ -309,7 +309,6 @@ body {
 }
 
 .footer {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,13 +319,6 @@ body {
   font-family: var(--body);
   font-size: 0.9rem;
   color: var(--white);
-}
-
-.bi-arrow-up-circle-fill {
-  color: var(--blue);
-  position: absolute;
-  top: 25%;
-  left: 1rem;
 }
 
 @media only screen and (min-width: 900px) {
