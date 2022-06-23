@@ -33,7 +33,7 @@ OPEN_MENU.addEventListener(('click'), () => {
 
 const displayProjects = (projects) => {
   projects.forEach((project) => {
-    PROJECTS.innerHTML += `<div class="project">
+    PROJECTS.innerHTML += `<div data-aos="zoom-in" class="project">
     <img class="project-img" src="${project.image}" alt="${project.title}">
     <div class="project-info">
     <h3 class="project-title">${project.title}</h3>

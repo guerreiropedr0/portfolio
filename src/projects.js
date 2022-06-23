@@ -2,6 +2,7 @@ import billionairesImg from './assets/billionaires.png';
 import pokedbImg from './assets/pokedb.png';
 import railsImg from './assets/rails.png';
 import recipeImg from './assets/recipe.png';
+import spaceImg from './assets/space.png';
 
 const languagesIcons = [
   {
@@ -53,8 +54,15 @@ const projects = [
     image: recipeImg,
     title: 'Recipe App',
     languages: [languagesIcons[5], languagesIcons[6]],
-    liveLink: 'https://fast-budget-rails.herokuapp.com/',
-    sourceLink: 'https://github.com/guerreiropedr0/fast-budget',
+    liveLink: 'https://recipe-rails-app.herokuapp.com/',
+    sourceLink: 'https://github.com/guerreiropedr0/recipe-app',
+  },
+  {
+    image: spaceImg,
+    title: 'Space Traveler',
+    languages: [languagesIcons[3], languagesIcons[4]],
+    liveLink: 'https://spacetraveller-spacex.netlify.app/',
+    sourceLink: 'https://github.com/clintonjosephs/Space-traveler',
   },
 ];
 
