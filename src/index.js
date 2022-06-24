@@ -32,21 +32,70 @@ OPEN_MENU.addEventListener(('click'), () => {
 });
 
 const displayProjects = (projects) => {
-  projects.forEach((project) => {
-    PROJECTS.innerHTML += `<div data-aos="zoom-in" class="project">
-    <img class="project-img" src="${project.image}" alt="${project.title}">
-    <div class="project-info">
-    <h3 class="project-title">${project.title}</h3>
-    <ul class="project-languages">
-    ${project.languages
+  projects.forEach((project, index) => {
+    PROJECTS.innerHTML += `
+    <a id="see-project${index}" data-aos="zoom-in" class="project">
+      <img class="project-img" src="${project.image}" alt="${project.title}">
+      <div class="project-info">
+        <h3 class="project-title">${project.title}</h3>
+        <ul class="project-languages">
+          ${project.languages
     .map((lang) => `<li class="project-item">
-      <img class="project-icon" src="${lang.icon}" alt="">
-      <p>${lang.name}</p>
-      </li>`)
+            <img class="project-icon" src="${lang.icon}" alt="">
+            <p>${lang.name}</p>
+          </li>`)
     .join('')}
-    </ul>
-  </div>`;
+        </ul>
+      </div>
+    </a>`;
   });
 };
 
-displayProjects(projects);
+const closeModal = (modal) => {
+  const closeModal = document.getElementById('close-modal');
+  closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'visible';
+  });
+};
+
+const displayModal = () => {
+  const buttons = document.querySelectorAll('[id^="see-project"]');
+  const modal = document.getElementById('modal');
+
+  buttons.forEach((button, index) => {
+    button.addEventListener(('click'), () => {
+      const project = projects[index];
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+
+      modal.innerHTML = `
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="project-title">${project.title}</h2>
+          <i id="close-modal" class="bi bi-x"></i>
+        </div>
+        <div class="modal-info">
+          <img class="modal-img" src="${project.image}" alt="${project.title}">
+          <p>${project.description}</p>
+        </div>
+        <div class="modal-footer">
+          <a target="_blank" rel="noopener noreferrer" class="btn modal-btn" href="${project.liveLink}">
+            <i class="bi bi-globe"></i>
+            WEBSITE
+          </a>
+          <a target="_blank" rel="noopener noreferrer" class="btn modal-btn" href="${project.sourceLink}">
+            <i class="bi bi-github"></i>
+            SOURCE
+          </a>
+        </div>
+      </div>`;
+      closeModal(modal);
+    });
+  });
+};
+
+window.onload = () => {
+  displayProjects(projects);
+  displayModal();
+};
