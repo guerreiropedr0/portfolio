@@ -1,32 +1,19 @@
-# Webpack Template
+# Pedro Guerreiro's Portfolio
 
-> This repository is a webpack template to all my projects.
+Learn everything there is to know about me! Starting with a bio and moving on to the abilities I have!
 
-This template includes Webpack, front-end linters and follows Git flow.
+![](./src/assets/mocking.png)
+
+## Explore it
+
+Please look through my [portfolio](https://guerreiropedr0-portfolio.netlify.app/) if you're interested.
 
 ## Built With
 
 - HTML
 - CSS
-- JAVASCRIPT
-- Node.js/NPM
+- JavaScript
 
-## Getting Started
-
-Start by cloning the repository.
-
-`git clone git@github.com:guerreiropedr0/webpack-template.git`
-
-Navigate to the created folder.
-
-`cd webpack-template`
-
-Make sure you have npm installed
-```
-npm install
-npm run build
-npm start
-```
 ## Authors
 
 👤 **Pedro Guerreiro**
@@ -35,15 +22,15 @@ npm start
 - Twitter: [@guerreiropedr0](https://twitter.com/guerreiropedr0)
 - LinkedIn: [Pedro Guerreiro](https://www.linkedin.com/in/guerreiropedr0/)
 
+## Acknowledgments
+
+- The icons used were from Icons8
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
-
-## Acknowledgments
-
-I took inspiration from a previous coding partner of mine, check his [GitHub profile](https://github.com/ahmedtaa)
 
 ## Show your support
 
