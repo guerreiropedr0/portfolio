@@ -375,7 +375,13 @@ body {
   font-family: var(--heading);
   padding: 0.375rem 0.75rem;
   border-radius: 0.25rem;
-  border: 2px solid var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.btn:hover,
+.resume:hover {
+  background-color: #00a6e7;
+  border: 1px solid #00a6e7;
 }
 
 .footer {
@@ -545,6 +551,27 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .modal-content {
+    width: 65%;
+  }
+
+  .modal-header {
+    justify-content: center;
+  }
+
+  .modal-header h2 {
+    margin-left: auto;
+  }
+
+  .modal-img {
+    width: 80%;
+    margin: auto;
+  }
+
+  .modal-footer {
+    align-self: center;
   }
 }
 
