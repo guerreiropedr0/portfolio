@@ -1,6 +1,7 @@
 import './styles/index.css';
 import logo from './assets/logo.svg';
 import avatar from './assets/head.png';
+import fullAvatar from './assets/full-avatar.png';
 import pedro from './assets/pedro-image.png';
 import rspec from './assets/rspec.png';
 import jest from './assets/jest.png';
@@ -11,8 +12,17 @@ import projects from './projects.js';
 const MENU = document.getElementById('menu');
 const OPEN_MENU = document.getElementById('open-menu');
 const PROJECTS = document.getElementById('projects-holder');
+const AVATAR = document.getElementById('avatar');
 document.getElementById('logo').src = logo;
-document.getElementById('avatar').src = avatar;
+
+const dynamicImage = () => {
+  if (window.innerWidth < 900) {
+    AVATAR.src = avatar;
+  } else AVATAR.src = fullAvatar;
+};
+
+window.addEventListener('resize', dynamicImage);
+
 document.getElementById('pedro-image').src = pedro;
 document.getElementById('rspec').src = rspec;
 document.getElementById('jest').src = jest;
@@ -96,6 +106,7 @@ const displayModal = () => {
 };
 
 window.onload = () => {
+  dynamicImage();
   displayProjects(projects);
   displayModal();
 };
