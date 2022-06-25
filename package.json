@@ -33,6 +33,7 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "got": "^11.8.5"
   }
 }
