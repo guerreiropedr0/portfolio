@@ -252,7 +252,7 @@ body {
   border-radius: 1rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--gray);
-  width: 343px;
+  width: 310px;
   height: 374px;
   cursor: pointer;
 }
