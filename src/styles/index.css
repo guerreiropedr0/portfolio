@@ -403,21 +403,20 @@ body {
 
 .modal {
   display: none;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  padding: 1rem;
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
-  margin: 1rem;
+  margin-top: 10%;
   padding: 1rem;
   background-color: var(--white);
   border: 1px solid var(--gray);
@@ -455,6 +454,9 @@ body {
 
 .modal-footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -598,6 +600,7 @@ body {
 
   .modal-content {
     width: 65%;
+    margin: auto;
   }
 
   .modal-header {

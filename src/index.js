@@ -76,7 +76,7 @@ const displayModal = () => {
   buttons.forEach((button, index) => {
     button.addEventListener(('click'), () => {
       const project = projects[index];
-      modal.style.display = 'flex';
+      modal.style.display = 'block';
       document.body.style.overflow = 'hidden';
 
       modal.innerHTML = `
