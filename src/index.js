@@ -76,7 +76,7 @@ const displayModal = () => {
   buttons.forEach((button, index) => {
     button.addEventListener(('click'), () => {
       const project = projects[index];
-      modal.style.display = 'flex';
+      modal.style.display = 'block';
       document.body.style.overflow = 'hidden';
 
       modal.innerHTML = `
@@ -87,7 +87,18 @@ const displayModal = () => {
         </div>
         <div class="modal-info">
           <img class="modal-img" src="${project.image}" alt="${project.title}">
-          <p>${project.description}</p>
+          <div class="modal-desc">
+            <p>${project.description}</p>
+            <p class="modal-toggle">Built with:</p>
+            <ul class="project-languages modal-languages">
+            ${project.languages
+    .map((lang) => `<li class="project-item">
+              <img class="project-icon" src="${lang.icon}" alt="">
+              <p>${lang.name}</p>
+            </li>`)
+    .join('')}
+          </ul>
+          </div>
         </div>
         <div class="modal-footer">
           <a target="_blank" rel="noopener noreferrer" class="btn modal-btn" href="${project.liveLink}">
