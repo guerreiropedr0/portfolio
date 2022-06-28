@@ -81,8 +81,6 @@ body {
   transition: 0.3s;
 }
 
-.nav-link:hover,
-.bi:hover,
 .active {
   color: var(--blue);
 }
@@ -503,6 +501,11 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
+  .nav-link:hover,
+.bi:hover {
+  color: var(--blue);
+}
+
   .bi-list {
     display: none;
   }
