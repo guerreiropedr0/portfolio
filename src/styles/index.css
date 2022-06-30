@@ -24,6 +24,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -36,6 +37,10 @@ body {
 }
 
 .nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -96,6 +101,7 @@ body {
 }
 
 .intro {
+  margin-top: 80px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
