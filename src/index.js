@@ -1,4 +1,5 @@
 import './styles/index.css';
+import ActiveMenuLink from 'active-menu-link';
 import logo from './assets/logo.svg';
 import avatar from './assets/head.png';
 import fullAvatar from './assets/full-avatar.png';
@@ -9,11 +10,22 @@ import rails from './assets/rails.png';
 import postman from './assets/postman.png';
 import projects from './projects.js';
 
+const options = {
+  activeClass: 'active',
+  headerHeight: 86,
+  showHash: false,
+};
+
+new ActiveMenuLink('.nav-bar', options); // eslint-disable-line no-new
+
 const MENU = document.getElementById('menu');
 const OPEN_MENU = document.getElementById('open-menu');
 const PROJECTS = document.getElementById('projects-holder');
 const AVATAR = document.getElementById('avatar');
+const FAVICON = document.getElementById('favicon');
 document.getElementById('logo').src = logo;
+
+FAVICON.href = logo;
 
 const dynamicImage = () => {
   if (window.innerWidth < 900) {
