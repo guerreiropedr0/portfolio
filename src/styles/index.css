@@ -419,7 +419,7 @@ body {
 }
 
 .modal-content {
-  margin-top: 10%;
+  margin-top: 96px;
   padding: 1rem;
   background-color: var(--white);
   border: 1px solid var(--gray);
@@ -619,7 +619,8 @@ body {
 
   .modal-content {
     width: 65%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .modal-header {
