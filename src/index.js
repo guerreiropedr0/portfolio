@@ -1,4 +1,5 @@
 import './styles/index.css';
+import ActiveMenuLink from 'active-menu-link';
 import logo from './assets/logo.svg';
 import avatar from './assets/head.png';
 import fullAvatar from './assets/full-avatar.png';
@@ -8,6 +9,13 @@ import jest from './assets/jest.png';
 import rails from './assets/rails.png';
 import postman from './assets/postman.png';
 import projects from './projects.js';
+
+let options = {
+  activeClass: "active",
+  headerHeight: 86,
+  showHash: false
+};
+new ActiveMenuLink("nav", options);
 
 const MENU = document.getElementById('menu');
 const OPEN_MENU = document.getElementById('open-menu');
