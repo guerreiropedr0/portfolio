@@ -9,6 +9,7 @@ import jest from './assets/jest.png';
 import rails from './assets/rails.png';
 import postman from './assets/postman.png';
 import projects from './projects.js';
+import certificates from './certificates.js';
 
 const options = {
   activeClass: 'active',
@@ -21,6 +22,7 @@ new ActiveMenuLink('.nav-bar', options); // eslint-disable-line no-new
 const MENU = document.getElementById('menu');
 const OPEN_MENU = document.getElementById('open-menu');
 const PROJECTS = document.getElementById('projects-holder');
+const CERTIFICATES = document.getElementById('certificates-holder');
 const AVATAR = document.getElementById('avatar');
 const FAVICON = document.getElementById('favicon');
 document.getElementById('logo').src = logo;
@@ -128,8 +130,26 @@ const displayModal = () => {
   });
 };
 
+const displayCertificates = (certificates) => {
+  certificates.forEach((certificate) => {
+    CERTIFICATES.innerHTML += `
+    <a
+      href="${certificate.link}"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-aos="zoom-in"
+      class="certificate"
+    >
+      <h3 class="certificate-title">${certificate.name}</h3>
+      <img class="certificate-img" src="${certificate.img}" alt="${certificate.name} badge">
+      <p class="certificate-text">${certificate.description}</p>
+    </a>`;
+  });
+};
+
 window.onload = () => {
   dynamicImage();
   displayProjects(projects);
+  displayCertificates(certificates);
   displayModal();
 };
